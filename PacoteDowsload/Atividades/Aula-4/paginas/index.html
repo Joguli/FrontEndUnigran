@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="paginas/main.css">
+    <title>Home Page</title>
+    <script>
+        function dataHora()
+        {
+            var time = new Date();
+            var date = time.getDate();
+            var mes = time.getMonth() + 1;
+            var ano = time.getFullYear();
+            var hour = time.getHours();
+            var minute = time.getMinutes();
+            var tempo = "Data: "+date+"-"+mes+"-"+ ano+" Horas"+":"+hour+":"+minute;
+
+            document.getElementById("timer").innerHTML=tempo;
+        }
+    </script>
+</head>
+<body onload="dataHora();">   
+    <span id="timer">Horas</span>
+    <div id="body">
+        
+        <tr>
+           <div id="topo">
+               <div id="imagem">
+                <img src="paginas/img/computer1.ico" alt="computador" title="PC desktop">
+            </div> 
+            </div>
+            <div id="titulo">
+                <h2>CURSO: TECNOLOGIA EM ANÁLISE E DESENVOLVIMENTO DE SISTEMAS</h2>
+                <h3>DISCIPLINA: DESENVOLVIMENTO VOLTADO A WEB I</h3>
+            </div>
+        <div id="hover">
+        <div id = "container">
+            <th colspan="9"></th>
+                <td>CONTEÚDO</td></tr>
+                <div id="icones">
+                    <form name="Aulas 1 e 2" action="paginas/Aulas1_2.html" method="get" oninvalid="debug(event)">
+                        <td><input type="submit" value="AULAS 1 e 2" ></td>
+                    </form>
+                </div>
+        <div id="icones">
+            <form name="Aula 3" action="index.html" method="get" oninvalid="debug(event)">
+                    <td><input type="submit" value="AULA 3" ></td>
+            </form>
+        </div>
+
+        <div id="icones">
+            <td>
+                <td>
+                <form name="Aula 5" action="paginas/aula4.html" method="get" oninvalid="debug(event)">
+                    <td><input type="submit" value="AULA 4" ></td></td>
+                </form>
+            </td>
+        </div>
+                <div id="icones">
+                    <td><form name="Aula 5" action="paginas/formulario.html" method="get" oninvalid="debug(event)">
+                        <td><input type="submit" value="AULA 5" ></td></td>
+                    </form>
+                </div>
+                <div id="icones">
+                    <td><form name="Aula 6" action="paginas/audio_video.html" method="get" oninvalid="debug(event)">
+                        <td><input type="submit" value="AULA 6" ></td></td>
+                    </form>
+                </div>
+                <div id="icones"><td>
+                    <td><form name="Aula 7" action="paginas/sete_index.html" method="get" oninvalid="debug(event)">
+                        <td><input type="submit" value="AULA 7" ></td></td>
+                    </form>
+                </td>
+                </div>
+                <div id="icones">
+                    <td>
+                        <td><form name="Aula 8" action="paginas/formulário_js.html" method="get" oninvalid="debug(event)">
+                            <td><input type="submit" value="AULA 8" ></td></td>
+                        </form>
+                    </td>
+                </div>
+                <div id="icones">
+                    <td><form name="Sobre" action="paginas/sobre.html" method="get" oninvalid="debug(event)">
+                        </tr><td><input type="submit" value="SOBRE" ></td></td></tr>
+                    </form>
+                </div>
+        </div>
+        </div>
+    <div id="rodape">
+        <p>REDES SOCIAIS</p> <div id="hover"> 
+        <img src="paginas/img/facebook1.ico" alt="facebook" title="Facebook"> 
+        <img src="paginas/img/whatsup1.ico" alt="whatsup" title="ZAP">
+        <img src="paginas/img/linked-In1.ico" alt="linkedin" title="Linkedin">
+    </div>
+</div>
+</body>
+</html>

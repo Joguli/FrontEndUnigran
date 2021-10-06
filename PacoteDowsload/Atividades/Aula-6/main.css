@@ -1,0 +1,53 @@
+body{
+    margin: 20px;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+#topo{
+    vertical-align: middle;
+    text-align: center;
+    height: 200px; 
+}
+#imagem{
+    vertical-align: middle;
+    width: auto;
+    height: auto;
+}
+#titulo{
+    vertical-align: middle;
+    height: 100px;
+}
+#container{
+    vertical-align: middle;
+    height: 100px;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto auto auto;
+}
+#icones{
+    height: 30px;
+    display: flex;
+    flex-direction: column;
+    vertical-align: middle;
+    justify-content: center;
+    border: 1px solid gray;
+}
+#icones:hover{
+    color: blue;
+    background-color: grey;
+}
+img:hover{
+    transform: scale(1.1);
+}
+
+#rodape{
+    text-align: center; 
+    height: 100px;
+}
+#destino{
+    margin-top: 100px;
+}
+#um_e_dois{
+    text-align: left;
+}

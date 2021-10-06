@@ -1,0 +1,93 @@
+body{
+    margin: 20px;
+    background-color: rgb(31, 26, 26);
+    color: white;
+    text-align: center;
+}
+
+#topo{
+    vertical-align: middle;
+    text-align: center;
+    height: 200px; 
+}
+#imagem{
+    vertical-align: middle;
+    width: auto;
+    height: auto;
+}
+#titulo{
+    vertical-align: middle;
+    height: 100px;
+}
+#container{
+    margin-top: 80px;
+    height: 200px;
+    vertical-align: middle;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto auto auto auto;
+}
+#icones{
+    height: 30px;
+    display: flex;
+    flex-direction: column;
+    vertical-align: left;
+    justify-content:center;
+    border: 1px solid rgb(230, 217, 217);
+}
+#icones:hover{
+    color: red;
+    background: rgb(160, 152, 152);
+}
+img:hover{
+    transform: scale(1.1);
+}
+
+#rodape{
+    text-align: center; 
+    height: 80px;
+    margin-bottom: 80px;
+}
+#destino{
+    margin-top: 100px;
+}
+#um_e_dois{
+    text-align: left;
+}
+#tbody{
+    margin: 0px;
+    padding: 0px;
+}
+ul{
+    position: relative;
+    background: rgb(36, 29, 29);
+    margin: 0px;
+    padding: 0px;
+    text-align: left;
+}
+ul li{
+    display: inline-block;
+    border:  0px solid;
+    margin: 0px;
+}
+ul li a{
+    text-decoration: none;
+    color: aliceblue;
+    padding: 10px;
+    display: block;
+}  
+ul li:hover{
+    background: red;
+} 
+ul ul{
+    position: absolute;
+    min-width: 125px;
+    display: none;
+    background:slategrey;
+}
+ul ul li{
+    display: block;
+}
+ul li:hover ul{
+    display: block;
+}
+

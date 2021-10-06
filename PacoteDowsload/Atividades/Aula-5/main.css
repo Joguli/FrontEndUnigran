@@ -1,0 +1,12 @@
+body{
+    margin: 20px;
+    background-color: rgb(243, 234, 234);
+    color: rgb(20, 5, 5);
+    text-align: center;
+}
+
+#topo{
+    vertical-align: middle;
+    text-align: center;
+    height: 200px; 
+}

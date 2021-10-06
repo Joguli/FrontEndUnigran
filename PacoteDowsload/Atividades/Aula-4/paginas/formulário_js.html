@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="main_css_js.css">
+    <title>Formulário_js</title>
+    <script type="text/javascript">
+       function validacao()
+       {
+            var nome = form_cad.nome.value;
+            var email = form_cad.email.value;
+            var idade = form_cad.idade.value;
+
+            if(nome == "")
+            {
+                alert("O campo NOME deve ser preenchido.");
+                form_cad.nome.focus();
+                return false;
+            }
+            if(email == "")
+            {
+                alert("O campo EMAIL deve ser preenchido.");
+                form_cad.email.focus();
+                return false;
+            }
+            if(idade == "")
+            {
+                alert("O campo IDADE deve ser preenchido.");
+                form_cad.idade.focus();
+                return false;
+            }
+       }
+    </script>
+</head>
+<body>
+    <div id="topo"></div>
+    <div id="body">
+        <h3>FORMULÁRIO - CADASTRO DE CLIENTES</h3>
+        <form name="form_cad" action="destino.html" method="get" oninvalid="debug(event)">
+            <p>
+                <label>NOME</label>
+                <input type="text" name="nome" size="50">
+            </p>
+            
+            <p> 
+                <label>EMAIL</label>
+                <input type="email" name="email" size="50">
+            </p>
+            
+            <p>
+                <label for="">IDADE</label>
+                <input type="date" name="idade" size="20">
+            </p>
+           
+            <p>
+                <input type="button" value="VOLTAR">
+                <input type="reset" value="LIMPAR" id="NOME">
+                <input type="submit" value="ENVIAR" onclick="return validacao();"/>
+            </p>
+        </form>
+    </div>
+</body>
+</html>
